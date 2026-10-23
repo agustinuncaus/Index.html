@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Fidelidad - Barbería Antares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            width: 350px;
+            height: 200px;
+            background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #4a4a4a;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .shop-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d1a73f; /* Gold accent */
+        }
+        .card-title {
+            font-size: 14px;
+            color: #8a8a8a;
+        }
+        .stamps-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .stamp {
+            width: 40px;
+            height: 40px;
+            border: 2px dashed #4a4a4a;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #d1a73f;
+            font-weight: bold;
+        }
+        .stamp.filled {
+            background-color: #d1a73f;
+            color: #121212;
+            border-style: solid;
+        }
+        .footer {
+            font-size: 12px;
+            color: #8a8a8a;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <div>
+                <div class="shop-name">Barbería Antares</div>
+                <div class="card-title">Tarjeta de Fidelidad</div>
+            </div>
+        </div>
+        <div class="stamps-container">
+            <div class="stamp filled">✔</div>
+            <div class="stamp filled">✔</div>
+            <div class="stamp filled">✔</div>
+            <div class="stamp"></div>
+            <div class="stamp"></div>
+            <div class="stamp"></div>
+        </div>
+        <div class="footer">
+            Completa 6 sellos y obtén un corte gratis.
+        </div>
+    </div>
+</body>
+</html>
