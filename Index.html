@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Lealtad - Barbería Antares</title>
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --red: #D32F2F;
+            --blue: #0288D1;
+            --dark: #1A1A1A;
+            --light-grey: #E0E0E0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--dark);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card-container {
+            background-color: var(--white);
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            overflow: hidden;
+            border: 5px solid var(--red);
+        }
+
+        .header {
+            background-color: var(--blue);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            border-bottom: 3px solid var(--red);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .grid-container {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            background-color: var(--white);
+        }
+
+        .stamp {
+            width: 70px;
+            height: 70px;
+            border: 2px dashed var(--blue);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            position: relative;
+            background-color: #F9F9F9;
+        }
+
+        .stamp.filled {
+            border-style: solid;
+            border-color: var(--red);
+            background-color: #FFEBEE;
+        }
+
+        .icon-mustache {
+            display: none;
+            width: 40px;
+            height: 20px;
+            fill: var(--red);
+        }
+
+        .filled .icon-mustache {
+            display: block;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: var(--blue);
+            color: var(--white);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card-container">
+    <div class="header">
+        <h1>Barbería Antares</h1>
+    </div>
+    
+    <div class="grid-container">
+        <div class="stamp filled"><svg class="icon-mustache" viewBox="0 0 24 24"><path d="M12,2C8.5,2 5,4 4,6C3,8 3,10 5,11C6.5,12 8,11 10,10C11.5,9 12,8 12,8C12,8 12.5,9 14,10C16,11 17.5,12 19,11C21,10 21,8 20,6C19,4 15.5,2 12,2Z"/></svg></div>
+        <div class="stamp filled"><svg class="icon-mustache" viewBox="0 0 24 24"><path d="M12,2C8.5,2 5,4 4,6C3,8 3,10 5,11C6.5,12 8,11 10,10C11.5,9 12,8 12,8C12,8 12.5,9 14,10C16,11 17.5,12 19,11C21,10 21,8 20,6C19,4 15.5,2 12,2Z"/></svg></div>
+        <div class="stamp filled"><svg class="icon-mustache" viewBox="0 0 24 24"><path d="M12,2C8.5,2 5,4 4,6C3,8 3,10 5,11C6.5,12 8,11 10,10C11.5,9 12,8 12,8C12,8 12.5,9 14,10C16,11 17.5,12 19,11C21,10 21,8 20,6C19,4 15.5,2 12,2Z"/></svg></div>
+        <div class="stamp filled"><svg class="icon-mustache" viewBox="0 0 24 24"><path d="M12,2C8.5,2 5,4 4,6C3,8 3,10 5,11C6.5,12 8,11 10,10C11.5,9 12,8 12,8C12,8 12.5,9 14,10C16,11 17.5,12 19,11C21,10 21,8 20,6C19,4 15.5,2 12,2Z"/></svg></div>
+        <div class="stamp"><svg class="icon-mustache" viewBox="0 0 24 24"><path d="M12,2C8.5,2 5,4 4,6C3,8 3,10 5,11C6.5,12 8,11 10,10C11.5,9 12,8 12,8C12,8 12.5,9 14,10C16,11 17.5,12 19,11C21,10 21,8 20,6C19,4 15.5,2 12,2Z"/></svg></div>
+        <div class="stamp"><svg class="icon-mustache" viewBox="0 0 24 24"><path d="M12,2C8.5,2 5,4 4,6C3,8 3,10 5,11C6.5,12 8,11 10,10C11.5,9 12,8 12,8C12,8 12.5,9 14,10C16,11 17.5,12 19,11C21,10 21,8 20,6C19,4 15.5,2 12,2Z"/></svg></div>
+    </div>
+    
+    <div class="footer">
+        ¡Completá 6 sellos y obtené un corte gratis!
+    </div>
+</div>
+
+</body>
+</html>
+
